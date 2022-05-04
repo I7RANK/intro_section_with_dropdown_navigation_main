@@ -3,6 +3,8 @@ import menuButtonImg from "../assets/images/logo.svg";
 import iconMenu from "../assets/images/icon-menu.svg";
 import iconCloseMenu from "../assets/images/icon-close-menu.svg";
 
+import NavBar from "./NavBar.vue";
+
 export default {
   data: function () {
     return {
@@ -11,6 +13,9 @@ export default {
       iconCloseMenu,
       toggleMainMenu: true,
     };
+  },
+  components: {
+    NavBar
   },
   methods: {
     handleToggleMainMenu() {
@@ -26,7 +31,8 @@ export default {
       <img src="../assets/images/logo.svg" alt="main logo" />
     </div>
 
-    <div class="nav-bar"></div>
+    <div class="nav-bar">
+    </div>
 
     <div class="dropdown-menu">
       <img v-if="toggleMainMenu === true" :src="iconMenu" alt="menu button" @click="this.handleToggleMainMenu"/>
@@ -37,6 +43,8 @@ export default {
         <header>
           <img class="icon-close-menu" :src="iconCloseMenu" alt="menu button" @click="this.handleToggleMainMenu"/>
         </header>
+
+        <NavBar />
       </div>
     </div>
   </header>
