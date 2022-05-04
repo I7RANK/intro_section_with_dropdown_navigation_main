@@ -25,16 +25,56 @@ export default {
     <div class="logo">
       <img src="../assets/images/logo.svg" alt="main logo" />
     </div>
+
     <div class="nav-bar"></div>
+
     <div class="dropdown-menu">
       <img v-if="toggleMainMenu === true" :src="iconMenu" alt="menu button" @click="this.handleToggleMainMenu"/>
-      <img v-else :src="iconCloseMenu" alt="menu button" @click="this.handleToggleMainMenu"/>
+    </div>
+
+    <div v-if="!toggleMainMenu" class="mobile-drop-menu-content">
+      <div class="mobile-menu-content">
+        <header>
+          <img class="icon-close-menu" :src="iconCloseMenu" alt="menu button" @click="this.handleToggleMainMenu"/>
+        </header>
+      </div>
     </div>
   </header>
 </template>
 
 <style>
-.dropdown-menu img {
-  transition: display .3 ease;
+header {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  height: 50px;
+  width: 100%;
+}
+
+.mobile-drop-menu-content {
+  background: #00000075;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-menu-content {
+  background: #fff;
+  height: 100vh;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-content header {
+  justify-content: flex-end;
 }
 </style>
