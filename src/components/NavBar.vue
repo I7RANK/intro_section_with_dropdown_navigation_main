@@ -135,6 +135,7 @@ export default {
 .sign-button-content button {
   background: none;
   color: var(--medium-gray);
+  font-weight: normal;
   border: none;
   height: 38px;
   border-radius: 15px;
