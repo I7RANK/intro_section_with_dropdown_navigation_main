@@ -134,6 +134,7 @@ export default {
   height: 38px;
   border-radius: 15px;
   margin: 0 0 3px 0;
+  cursor: pointer;
 }
 
 .sign-button-content .btn-sign-out {

@@ -35,13 +35,13 @@ export default {
     </div>
 
     <div class="dropdown-menu">
-      <img v-if="toggleMainMenu === true" :src="iconMenu" alt="menu button" @click="this.handleToggleMainMenu"/>
+      <img class="icon-menu" v-if="toggleMainMenu === true" :src="iconMenu" alt="menu button" @click="this.handleToggleMainMenu"/>
     </div>
 
     <div v-if="!toggleMainMenu" class="mobile-drop-menu-content">
       <div class="mobile-menu-content">
         <header>
-          <img class="icon-close-menu" :src="iconCloseMenu" alt="menu button" @click="this.handleToggleMainMenu"/>
+          <img class="icon-menu" :src="iconCloseMenu" alt="menu button" @click="this.handleToggleMainMenu"/>
         </header>
 
         <NavBar />
@@ -84,5 +84,9 @@ header {
 
 .mobile-menu-content header {
   justify-content: flex-end;
+}
+
+.icon-menu {
+  cursor: pointer;
 }
 </style>
