@@ -40,6 +40,7 @@ export default {
     </div>
 
     <div v-if="!toggleMainMenu" class="mobile-drop-menu-content">
+      <div class="mobile-menu-content-toggle" @click="this.handleToggleMainMenu"></div>
       <div class="mobile-menu-content">
         <header>
           <img class="icon-menu" :src="iconCloseMenu" alt="menu button" @click="this.handleToggleMainMenu"/>
@@ -77,6 +78,10 @@ header {
   z-index: 2;
   display: flex;
   justify-content: flex-end;
+}
+
+.mobile-menu-content-toggle {
+  width: 35%;
 }
 
 .mobile-menu-content {
