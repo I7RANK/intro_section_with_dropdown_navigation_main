@@ -13,10 +13,10 @@ export default {
       bannerMobile,
       bannerDesktop,
       clientLogos: [
-        clientAudiophile,
         clientDatabiz,
-        clientMaker,
+        clientAudiophile,
         clientMeet,
+        clientMaker,
       ]
     };
   },
@@ -48,5 +48,60 @@ export default {
 <style>
 .banner-desktop {
   display: none;
+}
+
+.intro-section {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  color: var(--medium-gray);
+  font-weight: 200;
+  padding: 0 20px;
+}
+
+.banner-mobile {
+  width: 100vw;
+  margin: 40px 0;
+}
+
+.intro-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.intro-info > * {
+  margin: 0 0 20px 0;
+}
+
+.intro-info h1 {
+  color: var(--almost-black);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.intro-info button {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.client-logo-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.client-logo-content img {
+  margin: 5px;
+}
+
+@media (min-width: 1440px) {
+  .banner-desktop {
+    display: block;
+  }
+
+  .banner-mobile {
+    display: none;
+  }
 }
 </style>
