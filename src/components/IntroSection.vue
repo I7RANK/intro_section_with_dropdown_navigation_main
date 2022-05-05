@@ -51,12 +51,10 @@ export default {
 }
 
 .intro-section {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   color: var(--medium-gray);
   font-weight: 200;
-  padding: 0 20px;
 }
 
 .banner-mobile {
@@ -68,6 +66,8 @@ export default {
   display: flex;
   flex-direction: column;
   text-align: center;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 .intro-info > * {
   margin: 0 0 20px 0;
