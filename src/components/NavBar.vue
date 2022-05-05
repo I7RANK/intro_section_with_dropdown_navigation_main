@@ -149,7 +149,6 @@ export default {
 
 @media (min-width: 1440px) {
   .navbar-content {
-    /* background: rgb(255, 149, 170); */
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -175,7 +174,6 @@ export default {
   }
 
   .sign-button-content {
-    /* background: #0000001a; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
