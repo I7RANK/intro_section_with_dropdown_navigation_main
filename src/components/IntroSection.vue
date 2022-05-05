@@ -1,6 +1,6 @@
 <script>
 import bannerMobile from "../assets/images/image-hero-mobile.png";
-import bannerDesktop from "../assets/images/image-hero-mobile.png";
+import bannerDesktop from "../assets/images/image-hero-desktop.png";
 
 import clientAudiophile from "../assets/images/client-audiophile.svg";
 import clientDatabiz from "../assets/images/client-databiz.svg";
@@ -98,10 +98,38 @@ export default {
 @media (min-width: 1440px) {
   .banner-desktop {
     display: block;
+    height: 70vh;
   }
 
   .banner-mobile {
     display: none;
+  }
+
+  .intro-section {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+    min-height: calc(100vh - 50px);
+  }
+
+  .intro-info {
+    align-items: flex-start;
+    max-width: 40%;
+    text-align: left;
+  }
+
+  .intro-info h1 {
+    font-size: 4rem;
+  }
+
+  .intro-info button {
+    margin: 0 0 40px 0;
+  }
+
+  .intro-info > * {
+    margin: 0 0 40px 0;
   }
 }
 </style>
