@@ -98,6 +98,11 @@ export default {
   user-select: none;
 }
 
+.main-menu ul li span:hover {
+  color: var(--almost-black);
+  font-weight: bold;
+}
+
 .navbar-content li {
   list-style: none;
 }
@@ -136,6 +141,11 @@ export default {
   margin: 0 0 3px 0;
   padding: 0 20px;
   cursor: pointer;
+}
+
+.sign-button-content button:hover {
+  color: var(--almost-black);
+  font-weight: bold;
 }
 
 .sign-button-content .btn-sign-out {
