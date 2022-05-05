@@ -32,6 +32,7 @@ export default {
     </div>
 
     <div class="nav-bar">
+      <NavBar />
     </div>
 
     <div class="dropdown-menu">
@@ -51,6 +52,10 @@ export default {
 </template>
 
 <style>
+.nav-bar {
+  display: none;
+}
+
 header {
   box-sizing: border-box;
   position: relative;
@@ -88,5 +93,15 @@ header {
 
 .icon-menu {
   cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .nav-bar {
+    display: flex;
+  }
+
+  .dropdown-menu, .mobile-drop-menu-content {
+    display: none;
+  }
 }
 </style>

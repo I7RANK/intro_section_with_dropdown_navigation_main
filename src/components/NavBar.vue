@@ -134,6 +134,7 @@ export default {
   height: 38px;
   border-radius: 15px;
   margin: 0 0 3px 0;
+  padding: 0 20px;
   cursor: pointer;
 }
 
@@ -144,5 +145,68 @@ export default {
 @keyframes subMenuAnimation {
   from {transform: scale(0);}
   to {transform: scale(1);}
+}
+
+@media (min-width: 1440px) {
+  .navbar-content {
+    /* background: rgb(255, 149, 170); */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    height: 50px;
+  }
+
+  .main-menu ul {
+    display: flex;
+  }
+
+  .main-menu ul li {
+    display: flex;
+    align-items: center;
+  }
+
+  .item-name {
+    margin: 0 15px;
+  }
+
+  .item-name img {
+    margin: 0 5px;
+  }
+
+  .sign-button-content {
+    /* background: #0000001a; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+  }
+
+  .sign-button-content button {
+    margin: 0;
+  }
+
+  .sub-items-dropdown {
+    background: #fff;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    margin: 0;
+    padding: 20px;
+    max-width: 200px;
+    box-shadow: 0 0 20px #0000001a;
+    border-radius: 10px;
+  }
+  .sub-items-dropdown ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sub-items-dropdown .sub-item-name span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 </style>
