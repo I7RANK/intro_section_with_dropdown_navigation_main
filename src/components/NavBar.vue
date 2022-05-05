@@ -168,10 +168,8 @@ export default {
   .main-menu ul li {
     display: flex;
     align-items: center;
-  }
-
-  .item-name {
-    margin: 0 15px;
+    justify-content: center;
+    min-width: 120px;
   }
 
   .item-name img {

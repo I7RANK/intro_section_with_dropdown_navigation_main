@@ -66,6 +66,7 @@ header {
   padding: 0 10px;
   height: 50px;
   width: 100%;
+  z-index: 1;
 }
 
 .mobile-drop-menu-content {
