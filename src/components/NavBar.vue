@@ -49,7 +49,7 @@ export default {
     <nav class="main-menu">
       <ul>
         <li :key="item.name" v-for="item in navItems">
-          <span class="item-name" @click="this.handleToggleSubItem(item)">
+          <span class="item-name" @click="this.handleToggleSubItem(item)" tabindex="0">
             {{ item.name }}
             <img v-if="item.subItems.length && !item.toggleSubItem" :src="iconArrowDown" alt="">
             <img v-else-if="item.subItems.length" :src="iconArrowUp" alt="">
@@ -58,7 +58,7 @@ export default {
           <div v-if="item.toggleSubItem" class="sub-items-dropdown">
             <ul>
               <li class="sub-item-name" :key="subItem.name" v-for="subItem in item.subItems">
-                <span>
+                <span tabindex="0">
                   <img v-if="subItem.icon" :src="subItem.icon" alt="">
                   {{ subItem.name }}
                 </span>
