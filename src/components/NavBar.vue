@@ -47,8 +47,8 @@ export default {
     </nav>
 
     <div class="sign-button-content">
-      <button class="btn-sign-in"></button>
-      <button class="btn-sign-out"></button>
+      <button class="btn-sign-in">Login</button>
+      <button class="btn-sign-out">Register</button>
     </div>
   </div>
 </template>
@@ -57,7 +57,8 @@ export default {
 .navbar-content {
   display: flex;
   flex-direction: column;
-  padding: 0 0 0 20px;
+  padding: 0 20px;
+  color: var(--medium-gray);
 }
 
 .main-menu ul {
@@ -65,6 +66,31 @@ export default {
 }
 
 .main-menu ul li {
+  display: flex;
+  align-items: center;
   list-style: none;
+  height: 45px;
+}
+
+.main-menu ul li img {
+  margin: 0 15px;
+}
+
+.sign-button-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-button-content button {
+  background: none;
+  color: var(--medium-gray);
+  border: none;
+  height: 38px;
+  border-radius: 15px;
+  margin: 0 0 3px 0;
+}
+
+.sign-button-content .btn-sign-out {
+  border: solid 2px var(--medium-gray);
 }
 </style>
