@@ -1,9 +1,11 @@
 <script>
 import Header from './components/Header.vue';
+import IntroSection from './components/IntroSection.vue';
 
 export default {
   components: {
-    Header
+    Header,
+    IntroSection
   }
 }
 </script>
@@ -12,6 +14,7 @@ export default {
   <Header />
 
   <main>
+    <IntroSection />
   </main>
 </template>
 
