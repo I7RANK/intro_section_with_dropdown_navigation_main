@@ -133,15 +133,9 @@ export default {
 }
 
 .sign-button-content button {
-  background: none;
+  background: #fff;
   color: var(--medium-gray);
-  font-weight: normal;
   border: none;
-  height: 38px;
-  border-radius: 15px;
-  margin: 0 0 3px 0;
-  padding: 0 20px;
-  cursor: pointer;
 }
 
 .sign-button-content button:hover {
@@ -190,10 +184,6 @@ export default {
     justify-content: space-around;
     align-items: center;
     width: 300px;
-  }
-
-  .sign-button-content button {
-    margin: 0;
   }
 
   .sub-items-dropdown {
