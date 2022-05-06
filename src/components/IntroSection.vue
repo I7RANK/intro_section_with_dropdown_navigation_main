@@ -58,7 +58,7 @@ export default {
 }
 
 .banner-mobile {
-  width: 100vw;
+  width: 100%;
   margin: 40px 0;
 }
 
